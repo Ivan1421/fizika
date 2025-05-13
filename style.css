@@ -13,7 +13,7 @@ body {
   padding: 20px;
   font-size: 2.5rem;
   color: white;
-  background: #47bfbf;
+  background: #219c9c;
   background-size: 200% auto;
   animation: gradient-shift 3s infinite linear;
   border-radius: 10px;
@@ -61,3 +61,32 @@ sub {
   vertical-align: sub;
   font-size: 0.6em;
 }
+.formula-link {
+  text-decoration: none; /* Убирает подчеркивание */
+  color: inherit;        /* Наследует цвет текста родителя */
+  display: block;        /* Делает ссылку блочным элементом */
+  outline: none;         /* Убирает контур при фокусе */
+}
+
+.formula-link:visited {
+  color: inherit;        /* Цвет для посещенной ссылки такой же */
+}
+
+.formula-link:hover, 
+.formula-link:active, 
+.formula-link:focus {
+  text-decoration: none; /* Убирает подчеркивание при состояниях */
+  color: inherit;        /* Сохраняет цвет */
+}
+
+.formula-box {
+  /* Ваши существующие стили для formula-box */
+  cursor: pointer;       /* Меняет курсор на "указатель" */
+}
+
+.formula-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
